@@ -1,0 +1,1631 @@
+[
+    {
+        "cve_id": "CVE-2023-0411",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18737",
+            "https://gitlab.com/wireshark/wireshark/-/issues/18711",
+            "https://gitlab.com/wireshark/wireshark/-/issues/18720"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0412",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18770"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0413",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18766"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0414",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18622"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0415",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18796"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0416",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18779"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0417",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18628"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0664",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/88288c2a51faa7c795f053fc8b31b1c16ff804c5",
+            "https://gitlab.com/qemu-project/qemu/-/commit/07ce178a2b0768eb9e712bb5ad0cf6dc7fcf0158"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0795",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/afaabc3e50d4e5d80a94143f7e3c997e7e410f68",
+            "https://gitlab.com/libtiff/libtiff/-/issues/493"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0796",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/afaabc3e50d4e5d80a94143f7e3c997e7e410f68",
+            "https://gitlab.com/libtiff/libtiff/-/issues/499"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0797",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/afaabc3e50d4e5d80a94143f7e3c997e7e410f68",
+            "https://gitlab.com/libtiff/libtiff/-/issues/495"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0798",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/afaabc3e50d4e5d80a94143f7e3c997e7e410f68",
+            "https://gitlab.com/libtiff/libtiff/-/issues/492"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0799",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/afaabc3e50d4e5d80a94143f7e3c997e7e410f68",
+            "https://gitlab.com/libtiff/libtiff/-/issues/494"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0800",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/33aee1275d9d1384791d2206776eb8152d397f00",
+            "https://gitlab.com/libtiff/libtiff/-/issues/496"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0801",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/33aee1275d9d1384791d2206776eb8152d397f00",
+            "https://gitlab.com/libtiff/libtiff/-/issues/498"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0802",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/500",
+            "https://gitlab.com/libtiff/libtiff/-/commit/33aee1275d9d1384791d2206776eb8152d397f00"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0803",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/501",
+            "https://gitlab.com/libtiff/libtiff/-/commit/33aee1275d9d1384791d2206776eb8152d397f00"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-0804",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/33aee1275d9d1384791d2206776eb8152d397f00",
+            "https://gitlab.com/libtiff/libtiff/-/issues/497"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-1992",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18852"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-1993",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18900"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-24612",
+        "patch_url": [
+            "https://gitlab.com/organicdesign/PdfBook/-/merge_requests/6"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-25433",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/520",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/467"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-25435",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/518"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-26965",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/472"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-26966",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/530",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/473"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2700",
+        "patch_url": [
+            "https://gitlab.com/libvirt/libvirt/-/commit/6425a311b8ad19d6f9c0b315bf1d722551ea3585#874a1e768ade6ceb4538931cbc06248e73223306"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2731",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/548"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2854",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19084"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2855",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19062"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2856",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19083"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2857",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19063"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2858",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19081"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2879",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19068"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2906",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19229"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-2908",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/9bd48f0dbd64fb94dc2b5b05238fde0bfdd4ff3f"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-3316",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/468",
+            "https://gitlab.com/libtiff/libtiff/-/issues/515"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-40360",
+        "patch_url": [
+            "https://gitlab.com/birkelund/qemu/-/commit/6c8f8456cb0b239812dee5211881426496da7b98"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-4511",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19258"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-4512",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19144"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-4513",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/19259"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-46277",
+        "patch_url": [
+            "https://gitlab.com/edneville/please/-/merge_requests/69#note_1594254575"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-4875",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/-/commit/4cc3128abdf52c615911589394a03271fddeefc6.patch",
+            "https://gitlab.com/muttmua/mutt/-/commit/452ee330e094bfc7c9a68555e5152b1826534555.patch"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-5106",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/commit/67039cfcae80b8fc0496f79be88714873cd169b3"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-52356",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/622",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/546"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-6277",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/614",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/545"
+        ]
+    },
+    {
+        "cve_id": "CVE-2015-0294",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/6e76e9b9fa845b76b0b9a45f05f4b54a052578ff"
+        ]
+    },
+    {
+        "cve_id": "CVE-2013-4489",
+        "patch_url": [
+            "https://www.gitlab.com/2013/11/04/gitlab-ce-6-2-and-5-4-security-release/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2013-4490",
+        "patch_url": [
+            "https://www.gitlab.com/2013/11/04/gitlab-ce-6-2-and-5-4-security-release/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2013-4546",
+        "patch_url": [
+            "https://www.gitlab.com/2013/11/08/security-vulnerability-in-gitlab-shell/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2013-4580",
+        "patch_url": [
+            "https://www.gitlab.com/2013/11/14/multiple-critical-vulnerabilities-in-gitlab/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2013-4581",
+        "patch_url": [
+            "https://www.gitlab.com/2013/11/14/multiple-critical-vulnerabilities-in-gitlab/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0216",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/4367a20cc4"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0358",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/449e8171f96a6a944d1f3b7d3627ae059eae21ca"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0485",
+        "patch_url": [
+            "https://gitlab.com/nbdkit/libnbd/-/commit/8d444b41d09a700c7ee6f9182a649f3f2d325abb"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0489",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/issues/341832"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0561",
+        "patch_url": [
+            "https://gitlab.com/freedesktop-sdk/mirrors/gitlab/libtiff/libtiff/-/commit/eecb0712f4c3a5b449f70c57988260a667ddbdef",
+            "https://gitlab.com/libtiff/libtiff/-/issues/362"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0562",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/362",
+            "https://gitlab.com/gitlab-org/build/omnibus-mirror/libtiff/-/commit/561599c99f987dc32ae110370cfdd7df7975586b"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0865",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/385",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/306"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0891",
+        "patch_url": [
+            "https://gitlab.com/freedesktop-sdk/mirrors/gitlab/libtiff/libtiff/-/commit/232282fd8f9c21eefe8d2d2b96cdbbb172fe7b7c",
+            "https://gitlab.com/libtiff/libtiff/-/issues/382",
+            "https://gitlab.com/libtiff/libtiff/-/issues/380"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0907",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/392"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0908",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/a95b799f65064e4ba2e2dfc206808f86faf93e85",
+            "https://gitlab.com/libtiff/libtiff/-/issues/383"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0909",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/310"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-0924",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/311"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1056",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/307"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1328",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/-/commit/e5ed080c00e59701ca62ef9b2a6d2612ebf765a5",
+            "https://gitlab.com/muttmua/mutt/-/issues/404"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1354",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/87f580f39011109b3bb5f6eca13fac543a542798",
+            "https://gitlab.com/libtiff/libtiff/-/issues/319"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1355",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/400",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/323"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1615",
+        "patch_url": [
+            "https://gitlab.com/samba-team/samba/-/merge_requests/2644"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1622",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/b4e79bfa0c7d2d08f6f1e7ec38143fc8cb11394a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1623",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/b4e79bfa0c7d2d08f6f1e7ec38143fc8cb11394a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1783",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-1783.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1935",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-1935.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1936",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-1936.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1940",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-1940.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-1944",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-1944.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2056",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/415",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/346"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2057",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/427",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/346"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2058",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/346",
+            "https://gitlab.com/libtiff/libtiff/-/issues/428"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2469",
+        "patch_url": [
+            "https://gitlab.com/gsasl/gsasl/-/commit/796e4197f696261c1f872d7576371232330bcc30"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2519",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/423",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/378"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2520",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/424",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/378"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2521",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/422",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/378"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-26353",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/abe300d9d894f7138e1af7c8e9c88c04bfe98b37"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-26354",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/8d1b247f3748ac4078524130c6d7ae42b6140aaf"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2953",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/48d6ece8389b01129e7d357f0985c8f938ce3da3",
+            "https://gitlab.com/libtiff/libtiff/-/issues/414",
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-2953.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-29603",
+        "patch_url": [
+            "https://gitlab.com/universis/universis-api/-/commit/39e47d7f4654c83296b8de61b243b510c375d3fb"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-2962",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/36a894aeb64a2e02871016da1c37d4a4ca109182"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-30110",
+        "patch_url": [
+            "https://gitlab.com/mojo42/Jirafeau/-/merge_requests/103"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3165",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/d307040b18"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-34526",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/433"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-35414",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/issues/1065"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3570",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/386",
+            "https://gitlab.com/libtiff/libtiff/-/commit/bd94a9b383d8755a27b5a1bc27660b8ad10b094c",
+            "https://gitlab.com/libtiff/libtiff/-/issues/381"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3597",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/413",
+            "https://gitlab.com/libtiff/libtiff/-/commit/236b7191f04c60d09ee836ae13b50f812c841047"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3598",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/435",
+            "https://gitlab.com/libtiff/libtiff/-/commit/cfbb883bf6ea7bedcb04177cc4e52d304522fdff"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3599",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/e813112545942107551433d61afd16ac094ff246",
+            "https://gitlab.com/libtiff/libtiff/-/issues/398"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3626",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/426",
+            "https://gitlab.com/libtiff/libtiff/-/commit/236b7191f04c60d09ee836ae13b50f812c841047"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3627",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/236b7191f04c60d09ee836ae13b50f812c841047",
+            "https://gitlab.com/libtiff/libtiff/-/issues/411"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3725",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/18378"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3767",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/issues/377473"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-3970",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/227500897dfb07fb7d27f7aa570050e62617e3be"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-40090",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/386"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-4172",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/defb7098"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-4645",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/commit/e813112545942107551433d61afd16ac094ff246"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-48281",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/488",
+            "https://gitlab.com/libtiff/libtiff/-/commit/d1b6b9c1b3cae2d9e37754506c1ad8f4f7b646b5"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-10196",
+        "patch_url": [
+            "https://gitlab.com/graphviz/graphviz/issues/1367"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-10844",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/merge_requests/657"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-10845",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/merge_requests/657"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-10846",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/merge_requests/657"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-12605",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/45168"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-12606",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/46957"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-12607",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/45903"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14349",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/9347b5c01dc52682cb6be11539d9b7ebceae4416"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14350",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/3287534daa3beac68e2e83ca4b4fe8a3148ff870"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14351",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/e57a8602b45f58edf7b3ffb61bb17525d75dfcb1"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14352",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/e0131852c6059107939893016c8ff56b6e42865d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14353",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/e0131852c6059107939893016c8ff56b6e42865d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14354",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/185152818541f5cdc059cbff3f3e8b654fc27c1d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14355",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/31eef6c766f47df8281942d19f76e35f475c781d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14356",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/e154cba1b3fc52bb8cb8aa846353c0db79b5d9c6"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14357",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/185152818541f5cdc059cbff3f3e8b654fc27c1d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14358",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/3287534daa3beac68e2e83ca4b4fe8a3148ff870"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14359",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/3d9028fec8f4d08db2251096307c0bbbebce669a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-14362",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/commit/6aed28b40a0410ec47d40c8c7296d8d10bae7576"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-16405",
+        "patch_url": [
+            "https://gitlab.com/mayan-edms/mayan-edms/issues/494",
+            "https://gitlab.com/mayan-edms/mayan-edms/commit/9ebe80595afe4fdd1e2c74358d6a9421f4ce130e"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-16406",
+        "patch_url": [
+            "https://gitlab.com/mayan-edms/mayan-edms/issues/495",
+            "https://gitlab.com/mayan-edms/mayan-edms/commit/48dfc06e49c7f773749e063f8cc69c95509d1c32"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-16407",
+        "patch_url": [
+            "https://gitlab.com/mayan-edms/mayan-edms/commit/076468a9225e4630a463c0bbceb8e5b805fe380c"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-17100",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/merge_requests/33/diffs?commit_id=6da1fb3f64d43be37e640efbec60400d1f1ac39e"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-17101",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/merge_requests/33/diffs?commit_id=f1b94e8a3ba49febdd3361c0214a1d1149251577"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-18643",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/53385"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-18647",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ee/issues/7538"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-18843",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/53158"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-19359",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/54189"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-20489",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-foss/issues/41500"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-20494",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/54334"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-5360",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/739dcd28a061738b317c1e9f91029d9cbc157159"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-5784",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/473851d211cf8805a161820337ca74cc9615d6ef"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-7456",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/be4c85b16e8801a16eec25e80eb9f3dd6a96731b"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-8905",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/58a898cb4459055bb488ca815c23b880c242a27d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-0357",
+        "patch_url": [
+            "https://gitlab.com/iucode-tool/iucode-tool/issues/3"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-0882",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/cdf396f456472ef8decd9598daa8dc0097cd30c5",
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/a70346fc6530aa28a98e4aa4cf0f40e2c3bcef6b",
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/43f5a2739dbf8f5c4c16a79f98e2630888f6b5d1"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-14061",
+        "patch_url": [
+            "https://gitlab.com/libidn/libidn2/commit/16853b6973a1e72fee2b7cccda85472cb9951305"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-14062",
+        "patch_url": [
+            "https://gitlab.com/libidn/libidn2/commit/3284eb342cd0ed1a18786e3fcdf0cdd7e76676bd"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-17716",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/30420"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-18013",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/c6f41df7b581402dfba3c19a1e3df4454c551a01"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-5334",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/c5aaa488a3d6df712dc8dff23a049133cab5ec1b"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-5335",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/49be4f7b82eba2363bb8d4090950dad976a77a3a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-5336",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/5140422e0d7319a8e2fe07f02cbcafc4d6538732"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-5337",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/94fcf1645ea17223237aaf8d19132e004afddc1a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-7869",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/51464af713d71802e3c6d5ac15f1a95132a354fe"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-8778",
+        "patch_url": [
+            "https://about.gitlab.com/2017/02/15/gitlab-8-dot-16-dot-5-security-release/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-12290",
+        "patch_url": [
+            "https://gitlab.com/libidn/libidn2/merge_requests/71",
+            "https://gitlab.com/libidn/libidn2/commit/241e8f486134793cb0f4a5b0e5817a97883401f5"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-12900",
+        "patch_url": [
+            "https://gitlab.com/federicomenaquintero/bzip2/commit/74de1e2e6ffc9d51ef9824db71a8ffee5962cdbc"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-14973",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/merge_requests/90"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-17546",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/4bb584a35f87af42d6cf09d15e9ce8909a839145"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-3829",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/issues/694"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5462",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5464",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5465",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5466",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5468",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5470",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5472",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-5474",
+        "patch_url": [
+            "https://about.gitlab.com/releases/2019/07/29/security-release-gitlab-12-dot-1-dot-2-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-6128",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/0c74a9f49b8d7a36b17b54a7428b3526d20f88a8"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-7663",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/commit/802d3cbf3043be5dce5317e140ccb1c17a6a2d39"
+        ]
+    },
+    {
+        "cve_id": "CVE-2014-8540",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/a2dfff418bf2532ebb5aee88414107929b17eefd",
+            "https://about.gitlab.com/2014/10/30/gitlab-7-4-3-released/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-4340",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/issues/15548",
+            "https://about.gitlab.com/2016/05/02/cve-2016-4340-patches/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-4484",
+        "patch_url": [
+            "https://gitlab.com/cryptsetup/cryptsetup/commit/ef8a7d82d8d3716ae9b58179590f7908981fa0cb"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-7444",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/commit/964632f37dfdfb914ebc5e49db4fa29af35b1de9"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-9086",
+        "patch_url": [
+            "https://about.gitlab.com/2016/11/02/cve-2016-9086-patches/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-9469",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/f325e4e734e5e486f3b02db176eb629124052b43",
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/55196497301eea429913f9c4b1b37c42c2e358ce",
+            "https://gitlab.com/gitlab-org/gitlab-ce/commit/29ceb98b5162677601702704e89d845580372078",
+            "https://about.gitlab.com/2016/12/05/cve-2016-9469/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-20286",
+        "patch_url": [
+            "https://gitlab.com/nbdkit/libnbd/-/commit/fb4440de9cc76e9c14bd3ddf3333e78621f40ad0"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-22172",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/issues/212911"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-22203",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/issues/320919"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-22212",
+        "patch_url": [
+            "https://gitlab.com/NTPsec/ntpsec/-/issues/699"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-22222",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/merge_requests/3130"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-22228",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/issues/332605"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-22255",
+        "patch_url": [
+            "https://gitlab.com/bramw/baserow/-/issues/370"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-27228",
+        "patch_url": [
+            "https://gitlab.com/Shinobi-Systems/Shinobi/-/tags",
+            "https://gitlab.com/Shinobi-Systems/Shinobi/-/merge_requests/286"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-28834",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/gitlab/-/commit/179329b5c3c118924fb242dc449d06b4ed6ccb66"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-30149",
+        "patch_url": [
+            "https://gitlab.com/composr-foundation/composr/commit/a71c44e03"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-30150",
+        "patch_url": [
+            "https://gitlab.com/composr-foundation/composr/commit/833a06466"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3181",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/-/commit/4a2becbdb4422aaffe3ce314991b9d670b7adf17",
+            "https://gitlab.com/muttmua/mutt/-/commit/939b02b33ae29bc0d642570c1dcfd4b339037d19",
+            "https://gitlab.com/muttmua/mutt/-/commit/d4305208955c5cdd9fe96dfa61e7c1e14e176a14"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-32055",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/-/commit/7c4779ac24d2fb68a2a47b58c7904118f40965d5"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-33038",
+        "patch_url": [
+            "https://gitlab.com/mailman/hyperkitty/-/issues/380",
+            "https://gitlab.com/mailman/hyperkitty/-/commit/9025324597d60b2dff740e49b70b15589d6804fa"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-34337",
+        "patch_url": [
+            "https://gitlab.com/mailman/mailman/-/commit/e4a39488c4510fcad8851217f10e7337a196bb51"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3527",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/05a40b172e4d691371534828078be47e7fff524c",
+            "https://gitlab.com/qemu-project/qemu/-/commit/7ec54f9eb62b5d177e30eb8b1cad795a5f8d8986"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3631",
+        "patch_url": [
+            "https://gitlab.com/libvirt/libvirt/-/commit/15073504dbb624d3f6c911e85557019d3620fdb2"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3667",
+        "patch_url": [
+            "https://gitlab.com/libvirt/libvirt/-/commit/447f69dec47e1b0bd15ecd7cd49a9fd3b050fb87"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3670",
+        "patch_url": [
+            "https://gitlab.com/samba-team/samba/-/commit/e1ab0c43629686d1d2c0b0b2bcdc90057a792049",
+            "https://gitlab.com/samba-team/samba/-/commit/5f0590362c5c0c5ee20503a67467f9be2d50e73b",
+            "https://gitlab.com/samba-team/samba/-/commit/86fe9d48883f87c928bf31ccbd275db420386803",
+            "https://gitlab.com/samba-team/samba/-/commit/3507e96b3dcf0c0b8eff7b2c08ffccaf0812a393",
+            "https://gitlab.com/samba-team/samba/-/commit/1d5b155619bc532c46932965b215bd73a920e56f",
+            "https://gitlab.com/samba-team/samba/-/commit/2b3af3b560c9617a233c131376c870fce146c002",
+            "https://gitlab.com/samba-team/samba/-/commit/dcfcafdbf756e12d9077ad7920eea25478c29f81"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3716",
+        "patch_url": [
+            "https://gitlab.com/nbdkit/nbdkit/-/commit/09a13dafb7bb3a38ab52eb5501cba786365ba7fd",
+            "https://gitlab.com/nbdkit/nbdkit/-/commit/6c5faac6a37077cf2366388a80862bb00616d0d8"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-37819",
+        "patch_url": [
+            "https://gitlab.com/pdftk-java/pdftk/-/merge_requests/21/diffs?commit_id=9b0cbb76c8434a8505f02ada02a94263dcae9247#diff-content-b3cfd29983c793bcae2375502abd5baa8f5d1081"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-3929",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/736b01642d85be832385",
+            "https://gitlab.com/qemu-project/qemu/-/issues/782"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39921",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17703"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39922",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17636"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39923",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17684"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39924",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17677"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39925",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17635"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39926",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17649"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39929",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17651"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39947",
+        "patch_url": [
+            "https://gitlab.com/gitlab-org/cves/-/blob/master/2021/CVE-2021-39947.json"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-40347",
+        "patch_url": [
+            "https://gitlab.com/mailman/postorius/-/commit/3d880c56b58bc26b32eac0799407d74b64b7474b",
+            "https://gitlab.com/mailman/postorius/-/issues/531"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4115",
+        "patch_url": [
+            "https://gitlab.com/redhat/centos-stream/rpms/polkit/-/merge_requests/6/diffs?commit_id=bf900df04dc390d389e59aa10942b0f2b15c531e"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4122",
+        "patch_url": [
+            "https://gitlab.com/cryptsetup/cryptsetup/-/commit/0113ac2d889c5322659ad0596d4cfc6da53e356c"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4145",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/66fed30c9cd11854fc878a4eceb507e915d7c9cd"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4158",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/commit/9bd6565ccee68f72d5012e24646e12a1c662827e"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4183",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17755"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4190",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/17811"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-4209",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/-/commit/3db352734472d851318944db13be73da61300568"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-42651",
+        "patch_url": [
+            "https://gitlab.com/invuls/pentest-projects/pcf/-/commit/67ca59ff668a4f361a0c6b1327287e484987b6f1"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44492",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44493",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44494",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44495",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44496",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44497",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44498",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44499",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44500",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44501",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44502",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44503",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44504",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44505",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44506",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44507",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44508",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44509",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44510",
+        "patch_url": [
+            "https://gitlab.com/YottaDB/DB/YDB/-/issues/828"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44565",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/0f5d1f1d193bc6b711d1644f172579d498ec1636"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44566",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/issues/259",
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/81886abb45a32e802151660de674f084afaef3aa"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-44567",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/e001430aa9fb53d2502fb6f036f6c51c578d2016",
+            "https://gitlab.com/francoisjacquet/rosariosis/-/issues/308",
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/519af055a4fdc1362657d75bca76f9c95a081eaa"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-46848",
+        "patch_url": [
+            "https://gitlab.com/gnutls/libtasn1/-/commit/44a700d2051a666235748970c2df047ff207aeb5"
+        ]
+    },
+    {
+        "cve_id": "CVE-2024-0567",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/-/issues/1521"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-10786",
+        "patch_url": [
+            "https://gitlab.com/snippets/1954764"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-11501",
+        "patch_url": [
+            "https://gitlab.com/gnutls/gnutls/-/commit/5b595e8e52653f6c5726a4cdd8fddeb6e83804d2",
+            "https://gitlab.com/gnutls/gnutls/-/issues/960"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-12707",
+        "patch_url": [
+            "https://gitlab.com/lepton-cms/LEPTON/-/commit/52215f708395a329c9e17ea33bfc6762d4efccbb"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-12823",
+        "patch_url": [
+            "https://gitlab.com/openconnect/openconnect/-/merge_requests/108"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-13278",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/9cb4fec5fe177f1d3716708b46d1958eac477ebe"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-14394",
+        "patch_url": [
+            "https://gitlab.com/qemu-project/qemu/-/issues/646"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-14954",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/-/commit/c547433cdf2e79191b15c6932c57f1472bfb5ff4"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-15716",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/89ae9de732024e3a2e99262aa98b400a1aa6975a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-15717",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/89ae9de732024e3a2e99262aa98b400a1aa6975a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-15718",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/89ae9de732024e3a2e99262aa98b400a1aa6975a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-15721",
+        "patch_url": [
+            "https://gitlab.com/francoisjacquet/rosariosis/-/commit/c4a694860b50c4aa5c67d6568f7d0613fef1a30d"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-17354",
+        "patch_url": [
+            "https://gitlab.com/lilypond/lilypond/-/merge_requests/1522"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-18032",
+        "patch_url": [
+            "https://gitlab.com/graphviz/graphviz/-/issues/1700"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-19143",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/158",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/119"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-19144",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/issues/159"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-20118",
+        "patch_url": [
+            "https://gitlab.com/yongchuank/avast-aswsnx-ioctl-82ac0060-oob-write"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-25862",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/commit/7f3fe6164a68b76d9988c4253b24d43f498f1753"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-25863",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/issues/16741",
+            "https://gitlab.com/wireshark/wireshark/-/commit/5803c7b87b3414cdb8bf502af50bb406ca774482"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-25866",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/commit/4a948427100b6c109f4ec7b4361f0d2aec5e5c3f"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-26575",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/merge_requests/472",
+            "https://gitlab.com/wireshark/wireshark/-/merge_requests/471",
+            "https://gitlab.com/wireshark/wireshark/-/merge_requests/473",
+            "https://gitlab.com/wireshark/wireshark/-/merge_requests/467",
+            "https://gitlab.com/wireshark/wireshark/-/commit/3ff940652962c099b73ae3233322b8697b0d10ab"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-28030",
+        "patch_url": [
+            "https://gitlab.com/wireshark/wireshark/-/commit/b287e7165e8aa89cde6ae37e7c257c5d87d16b9b"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-28896",
+        "patch_url": [
+            "https://gitlab.com/muttmua/mutt/-/commit/d92689088dfe80a290ec836e292376e2d9984f8f",
+            "https://gitlab.com/muttmua/mutt/-/commit/04b06aaa3e0cc0022b9b01dbca2863756ebbf59a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-35523",
+        "patch_url": [
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/160",
+            "https://gitlab.com/libtiff/libtiff/-/commit/c8d613ef497058fe653c467fc84c70a62a4a71b2"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-35524",
+        "patch_url": [
+            "https://gitlab.com/rzkn/libtiff/-/commit/7be2e452ddcf6d7abca88f41d3761e6edab72b22",
+            "https://gitlab.com/libtiff/libtiff/-/merge_requests/159"
+        ]
+    }
+]

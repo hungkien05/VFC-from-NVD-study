@@ -1,0 +1,247 @@
+[
+    {
+        "cve_id": "CVE-2011-4103",
+        "patch_url": [
+            "https://bitbucket.org/jespern/django-piston/commits/91bdaec89543/"
+        ]
+    },
+    {
+        "cve_id": "CVE-2023-46404",
+        "patch_url": [
+            "https://bitbucket.org/utmandrew/pcrs/commits/5f18bcbb383b7d73f7a8b399cc52b23597d752ae"
+        ]
+    },
+    {
+        "cve_id": "CVE-2010-1980",
+        "patch_url": [
+            "http://bitbucket.org/roberto.aloi/joomla-flickr/changeset/64ebf6b25030"
+        ]
+    },
+    {
+        "cve_id": "CVE-2010-2477",
+        "patch_url": [
+            "http://bitbucket.org/ianb/paste/changeset/fcae59df8b56"
+        ]
+    },
+    {
+        "cve_id": "CVE-2012-0878",
+        "patch_url": [
+            "https://bitbucket.org/ianb/pastescript/changeset/a19e462769b4",
+            "https://bitbucket.org/ianb/pastescript/pull-request/3/fix-group-permissions-for-pastescriptserve"
+        ]
+    },
+    {
+        "cve_id": "CVE-2012-2451",
+        "patch_url": [
+            "https://bitbucket.org/shlomif/perl-config-inifiles/changeset/a08fa26f4f59"
+        ]
+    },
+    {
+        "cve_id": "CVE-2012-5577",
+        "patch_url": [
+            "https://bitbucket.org/kang/python-keyring-lib/commits/049cd181470f1ee6c540e1d64acf1def7b1de0c1"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-25857",
+        "patch_url": [
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/fc300780da21f4bb92c148bc90257201220cf174"
+        ]
+    },
+    {
+        "cve_id": "CVE-2022-26563",
+        "patch_url": [
+            "https://bitbucket.org/tildeslash/monit/commits/6ecaab1d375f33165fe98d06d92f36c949c0ea11"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-12088",
+        "patch_url": [
+            "https://bitbucket.org/nikratio/s3ql/commits/85aba5c2d5c81453a73a50ed638adaeef0521020"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-18029",
+        "patch_url": [
+            "https://bitbucket.org/navigatecms/navigatecms/commits/586e67ce1c43d459f6b00221fb30be26fcbfb866"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-20578",
+        "patch_url": [
+            "https://bitbucket.org/nuttx/nuttx/issues/119/denial-of-service-infinite-loop-while"
+        ]
+    },
+    {
+        "cve_id": "CVE-2018-20752",
+        "patch_url": [
+            "https://bitbucket.org/LaNMaSteR53/recon-ng/commits/41e96fd58891439974fb0c920b349f8926c71d4c#chg-modules/reporting/csv.py"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-12972",
+        "patch_url": [
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/issues/224/byte-to-bit-overflow-in-cbc",
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/0d2bd649ea386539220d4facfe1f65eb1dadb86c"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-12973",
+        "patch_url": [
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/commits/6a29f10f723f406eb25555f55842c59a43a38912"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-12974",
+        "patch_url": [
+            "https://bitbucket.org/connect2id/nimbus-jose-jwt/issues/217/explicit-check-for-ec-public-key-on-curve"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-18640",
+        "patch_url": [
+            "https://bitbucket.org/asomov/snakeyaml/issues/377/allow-configuration-for-preventing-billion"
+        ]
+    },
+    {
+        "cve_id": "CVE-2017-8906",
+        "patch_url": [
+            "https://bitbucket.org/multicoreware/x265/issues/345/integer-underflow-in-x265-source-common"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-1010268",
+        "patch_url": [
+            "https://bitbucket.org/jakobsg/ladon/src/42944fc012a3a48214791c120ee5619434505067/src/ladon/interfaces/soap.py#lines-688"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-11454",
+        "patch_url": [
+            "https://bitbucket.org/tildeslash/monit/commits/328f60773057641c4b2075fab9820145e95b728c",
+            "https://bitbucket.org/tildeslash/monit/commits/1a8295eab6815072a18019b668fe084945b751f3"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-11455",
+        "patch_url": [
+            "https://bitbucket.org/tildeslash/monit/commits/f12d0cdb42d4e74dffe1525d4062c815c48ac57a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-12968",
+        "patch_url": [
+            "https://bitbucket.org/Doomseeker/doomseeker/pull-requests/74/more-openbsd-issues-3654-the-srb2-thingy/diff",
+            "https://bitbucket.org/Doomseeker/doomseeker/commits/ae456aac888cb794ea3292f7f99cb87d6b22a555",
+            "https://bitbucket.org/Doomseeker/doomseeker/commits/b9a90f1f56e704c5cbeefe83da2f9ce939920278"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-13343",
+        "patch_url": [
+            "https://bitbucket.org/butor-team/portal/commits/cd7055d33e194fcf530100ee1d8d13aa9cde230b"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-20375",
+        "patch_url": [
+            "https://bitbucket.org/ritt/elog/commits/eefdabb714f26192f585083ef96c8413e459a1d1"
+        ]
+    },
+    {
+        "cve_id": "CVE-2019-20376",
+        "patch_url": [
+            "https://bitbucket.org/ritt/elog/commits/993bed4923c88593cc6b1186e0d1b9564994a25a"
+        ]
+    },
+    {
+        "cve_id": "CVE-2014-0485",
+        "patch_url": [
+            "https://bitbucket.org/nikratio/s3ql/commits/091ac263809b4e8"
+        ]
+    },
+    {
+        "cve_id": "CVE-2014-2525",
+        "patch_url": [
+            "https://bitbucket.org/xi/libyaml/commits/bce8b60f0b9af69fa9fab3093d0a41ba243de048"
+        ]
+    },
+    {
+        "cve_id": "CVE-2014-2527",
+        "patch_url": [
+            "https://bitbucket.org/jeromerobert/k4dirstat/commits/1ad2e96d73fa06cd9be0f3749b337c03575016aa#chg-src/kcleanup.cpp"
+        ]
+    },
+    {
+        "cve_id": "CVE-2014-2528",
+        "patch_url": [
+            "https://bitbucket.org/jeromerobert/k4dirstat/commits/1ad2e96d73fa06cd9be0f3749b337c03575016aa#chg-src/kcleanup.cpp"
+        ]
+    },
+    {
+        "cve_id": "CVE-2014-3207",
+        "patch_url": [
+            "https://bitbucket.org/skskeyserver/sks-keyserver/commits/88d453cdc858d1352c61a4d4a6cd5b1ac17f2724"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-1000030",
+        "patch_url": [
+            "https://bitbucket.org/pidgin/main/commits/d6fc1ce76ffe"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-1494",
+        "patch_url": [
+            "https://bitbucket.org/sybren/python-rsa/pull-requests/14/security-fix-bb06-attack-in-verify-by/diff"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-9928",
+        "patch_url": [
+            "https://bitbucket.org/McKael/mcabber-crew/commits/6e1ead98930d7dd0a520ad17c720ae4908429033/raw"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-9957",
+        "patch_url": [
+            "https://bitbucket.org/mpyne/game-music-emu/wiki/Home"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-9958",
+        "patch_url": [
+            "https://bitbucket.org/mpyne/game-music-emu/wiki/Home"
+        ]
+    },
+    {
+        "cve_id": "CVE-2016-9959",
+        "patch_url": [
+            "https://bitbucket.org/mpyne/game-music-emu/wiki/Home"
+        ]
+    },
+    {
+        "cve_id": "CVE-2021-39109",
+        "patch_url": [
+            "https://bitbucket.org/atlassian/atlasboard/commits/9c03df09f09399e2601010466e8ba3a28236eb9c"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-13111",
+        "patch_url": [
+            "https://bitbucket.org/naviserver/naviserver/commits/a5c3079f1d8996d5f34c9384a440acf3519ca3bb"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-36541",
+        "patch_url": [
+            "https://bitbucket.org/csalgadow/demokratian_votaciones/commits/b56c48b519fc52efa65404c312ea9bbde320e3fa"
+        ]
+    },
+    {
+        "cve_id": "CVE-2020-36542",
+        "patch_url": [
+            "https://bitbucket.org/csalgadow/demokratian_votaciones/commits/0d073ee461edd5f42528d41e00bf0a7b22e86bb3"
+        ]
+    }
+]
