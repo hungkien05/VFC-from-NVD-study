@@ -2,11 +2,10 @@ import json
 import re,os
 import time
 import requests
-from lib import check_if_commit_exist, create_file_if_not_exists, load_jsonl
+from lib import check_if_commit_exist, create_file_if_not_exists
+from config import GITLAB_API_KEY
 
-# Placeholder for your GitLab API token
-gitlab_api_token = ""
-headers = {"Authorization": f"Bearer {gitlab_api_token}"}
+headers = {"Authorization": f"Bearer {GITLAB_API_KEY}"}
 GL_ISSUE_PULL = re.compile(r"http(s?)://gitlab.com/([0-9a-z/]+)(/-)?/(issues|merge_requests)/([0-9]+)\S*\s*")
 GL_COMMIT = re.compile(r"http(s?)://gitlab.com/([0-9a-z/]+)(/-)?/(commit)/([0-9a-f]{5,40})\S*\s*")
 OUTPUT_LOG_DIR = "update/"
@@ -14,13 +13,8 @@ output_dir =""
 
 # Function to load CVE data from the JSON file
 def load_cve_data(filepath):
-    cve_data = []
-    if filepath.endswith(".json"):
-        with open(filepath, 'r') as file:
-            cve_data= json.load(file)
-    elif filepath.endswith(".jsonl"):
-        cve_data = load_jsonl(filepath)
-    return cve_data
+    with open(filepath, 'r') as file:
+        return json.load(file)
     
 def handle_issue(project_id, issue_id, count):
     project_id = project_id.replace("/","%2F")

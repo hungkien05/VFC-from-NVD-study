@@ -3,11 +3,10 @@ import re,os
 import time
 import requests
 
-from lib import check_if_commit_exist, create_file_if_not_exists, load_jsonl
+from lib import check_if_commit_exist, create_file_if_not_exists
+from config import BITBUCKET_API_KEY
 
-# Placeholder for your GitLab API token
-api_token = ""
-headers = {"Authorization": f"{api_token}"}
+headers = {"Authorization": f"{BITBUCKET_API_KEY}"}
 RE_ISSUE_PULL = re.compile(r"http(s?)://bitbucket.org/([^/]+/[^/]+)/(issues|pull-requests)/([0-9]+)S*s*")
 RE_COMMIT = re.compile(r"http(s?)://bitbucket.org/([^/]+/[^/]+)/(commits|pull/[0-9]+/commits)/([0-9a-f]{5,40})\S*\s*")
 OUTPUT_LOG_DIR = "update/"
@@ -15,13 +14,8 @@ output_dir = ""
 
 # Function to load CVE data from the JSON file
 def load_cve_data(filepath):
-    cve_data = []
-    if filepath.endswith(".json"):
-        with open(filepath, 'r') as file:
-            cve_data= json.load(file)
-    elif filepath.endswith(".jsonl"):
-        cve_data = load_jsonl(filepath)
-    return cve_data
+    with open(filepath, 'r') as file:
+        return json.load(file)
     
 def handle_issue(project_id, issue_id, count):
     url = f"https://gitlab.com/api/v4/projects/{project_id}/issues/{issue_id}/closed_by"

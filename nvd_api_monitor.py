@@ -1,17 +1,15 @@
-#note: change check_if_commit_exist in lib.py to restore normal monitoring
-
 import csv
 import os
-import time
 import requests, config
 import json, curl,datetime
 from datetime import datetime, timedelta
 from commit_github import crawl_diff as github_crawl
 from commit_gitlab import crawl_commit as gitlab_crawl
 from commit_bitbucket import crawl_commit as bitbucket_crawl
-from lib import dump_jsonl
+from get_function import get_functions
+from patch_parser import process_function
 from timeloop import Timeloop
-from urllib.parse import quote
+
 #initialize timeloop obj
 tl = Timeloop()
 
@@ -30,9 +28,8 @@ class ResponseHandler:
         self.vuln_status_dict = dict()
 
     def parse_response(self,resp): #parse response of NVD, to extract CVEs and their corresponding commits, then put them into json file
-
         global save_dir
-        is_explicit = False
+        
         for item in resp["vulnerabilities"]:
             #todo: check if this cve is modified or new
             patch_urls = []
@@ -46,8 +43,6 @@ class ResponseHandler:
             else:
                 self.vuln_status_dict[vuln_status] +=1
             id= cve["id"]
-            if id == "CVE-2024-0690":
-                a=1
             refs = cve["references"]
             for ref in refs:
                 try:
@@ -58,16 +53,10 @@ class ResponseHandler:
                     url = ref["url"]
                     if "github.com" in url:
                         github_urls.append(url)
-                        is_explicit = True
                     elif "gitlab.com" in url:
                         gitlab_urls.append(url)
-                        is_explicit = True
                     elif "bitbucket.org" in url:
                         bitbucket_urls.append(url)
-                        is_explicit = True
-                        
-            if not is_explicit:
-                a=1 #todo: add the script of get implicit VFCs
             if len(github_urls) >0:
                 self.github_data.append({"cve_id": id, "patch_url": github_urls})
             if len(gitlab_urls) >0:
@@ -75,18 +64,14 @@ class ResponseHandler:
             if len(bitbucket_urls) >0:
                 self.bitbucket_data.append({"cve_id": id, "patch_url": bitbucket_urls})
         
-    def output(self,current_time): 
+    def output(self,current_time):
         global save_dir
-        # with open(f"{save_dir}/github.json", "w") as f:
-        #     json.dump(self.github_data, f, indent=4)
-        # with open(f"{save_dir}/gitlab.json", "w") as f:
-        #     json.dump(self.gitlab_data, f, indent=4)
-        # with open(f"{save_dir}/bitbucket.json", "w") as f:
-        #     json.dump(self.bitbucket_data, f, indent=4)
-        
-        dump_jsonl(self.github_data, f"{save_dir}/github.jsonl")
-        dump_jsonl(self.gitlab_data, f"{save_dir}/gitlab.jsonl")
-        dump_jsonl(self.bitbucket_data, f"{save_dir}/bitbucket.jsonl")
+        with open(f"{save_dir}/github.json", "w") as f:
+            json.dump(self.github_data, f, indent=4)
+        with open(f"{save_dir}/gitlab.json", "w") as f:
+            json.dump(self.gitlab_data, f, indent=4)
+        with open(f"{save_dir}/bitbucket.json", "w") as f:
+            json.dump(self.bitbucket_data, f, indent=4)
             
         # update_patch_json()
         #log the csv file
@@ -103,85 +88,111 @@ class ResponseHandler:
     
 def update_patch_json(): # update current commit or add new commit, each platform has its own code (due to different in api)
     global save_dir
-    github_crawl(f"{save_dir}/github.jsonl", save_dir)
-    gitlab_crawl(f"{save_dir}/gitlab.jsonl", save_dir)
-    bitbucket_crawl(f"{save_dir}/bitbucket.jsonl",save_dir)
-    
-    
-def split_ranges_for_api(raw_start_date, raw_end_date, max_days=120):
-    # Convert strings to datetime objects
-    start_date = datetime.strptime(raw_start_date, "%d-%m-%Y")
-    end_date = datetime.strptime(raw_end_date, "%d-%m-%Y")
+    github_crawl(f"{save_dir}/github.json", save_dir)
+    gitlab_crawl(f"{save_dir}/gitlab.json", save_dir)
+    bitbucket_crawl(f"{save_dir}/bitbucket.json",save_dir)
 
-    # Initialize ranges
-    ranges = []
+def split_date_range(start_date, end_date, max_days=120):
+    """
+    Split a date range into chunks of max_days or less.
+    Returns a list of (chunk_start_date, chunk_end_date) tuples.
+    """
+    chunks = []
     current_start = start_date
-
-    while current_start < end_date:
-        # Calculate the next end date (120 days later or the actual end date)
-        current_end = min(current_start + timedelta(days=max_days - 1), end_date)
-        # ranges.append((current_start.strftime("%d-%m-%Y"), current_end.strftime("%d-%m-%Y")))
-        ranges.append((current_start, current_end))
+    
+    while current_start <= end_date:
+        # Calculate the end date for this chunk
+        current_end = min(current_start + timedelta(days=max_days-1), end_date)
+        chunks.append((current_start, current_end))
+        
+        # Move to the next chunk
         current_start = current_end + timedelta(days=1)
+    
+    return chunks
 
-    for (mod_start_date, mod_end_date) in ranges:
-        check = fetch_cve_data(mod_start_date=mod_start_date, mod_end_date = mod_end_date)
-    # return ranges
-    return check
+def fetch_chunk_data(chunk_start, chunk_end, resp_handler):
+    """
+    Fetch CVE data for a specific date chunk (120 days or less).
+    """
+    params = {
+        'resultsPerPage': 2000,
+    }
+    
+    if chunk_start and chunk_end:
+        # params['lastModStartDate'] = chunk_start.strftime('%Y-%m-%dT00:00:00.000+08:00')
+        # params['lastModEndDate'] = chunk_end.strftime('%Y-%m-%dT00:00:00.000+08:00')
+        params['pubStartDate'] = chunk_start.strftime('%Y-%m-%dT00:00:00.000+08:00')
+        params['pubEndDate'] = chunk_end.strftime('%Y-%m-%dT00:00:00.000+08:00')
+    
+    print(f"API parameters: {params}")
+    
+    start_index = 0
+    total_result = -1  # initialize total_result variable
+    
+    while True:
+        print(f"Calling NVD API with start_index = {start_index}")
+        params['startIndex'] = start_index
+        headers = {
+            "apiKey":   config.NVD_API_KEY# NVD API key
+        }
+        response = requests.get(NVD_API_URL, params=params, headers=headers)
+        print(requests.utils.unquote(response.url))
+        if response.status_code != 200:
+            print(f"Error fetching CVEs: {response.text}.\nStatus code: {response.status_code}")
+            return False
+        
+        print("Done calling API")
+        cve_data = response.json()
+        
+        if total_result < 0:
+            total_result = int(cve_data["totalResults"])
+        
+        resp_handler.parse_response(cve_data)
+        print("Done parse_response")
+        
+        start_index += 2000
+        if start_index > total_result:  # no more page to read
+            break
+    
+    return True
 
-def fetch_cve_data(mod_start_date=None, mod_end_date = None):
+def fetch_cve_data(mod_start_date=None, mod_end_date=None):
     """
     Fetch CVE data from the NVD API. If mod_start_date is provided,
     it fetches CVEs modified since that date.
+    
+    Handles unlimited date ranges by splitting into chunks of 120 days.
     """
-    params = {
-        'resultsPerPage': 2000,  
-    }
-    headers = {
-        "apiKey": config.NVD_API_KEY,  # NVD API key
-        'User-Agent': 'python-requests/2.31.0',
-    }
     resp_handler = ResponseHandler()
-    # mod_start_date = mod_start_date - timedelta(days=16) # uncomment if want to monitor longer than 1 days
-    if mod_start_date:
-        # choose date range based on Modified or Published ?
-        # params['lastModStartDate'] = mod_start_date.strftime('%Y-%m-%dT00:00:00.000+08:00')
-        # params['lastModEndDate'] = mod_end_date.strftime('%Y-%m-%dT00:00:00.000+08:00')
-        params['pubStartDate'] = mod_start_date.strftime('%Y-%m-%dT00:00:00.000+08:00')
-        params['pubEndDate'] = mod_end_date.strftime('%Y-%m-%dT00:00:00.000+08:00')
-    print(params)
-    # response = requests.get(NVD_API_URL, params=params)
-    start_index = 0
-    total_result =-1 #initialize total_result variable
-    while True:
-        print(f"calling NVD API with start_index = {start_index} ")
-        params['startIndex'] = start_index
-        # url_params = f"lastModStartDate={params['lastModStartDate']}&lastModEndDate={params['lastModEndDate']}"
+    
+    if mod_start_date and mod_end_date:
+        # Calculate the number of days between start and end dates
+        delta = (mod_end_date - mod_start_date).days
         
-        try:
-            response = requests.get(NVD_API_URL, params=params, headers=headers)
-        except Exception as e:
-            time.sleep(3)
-            print(f"Error {e}. Request URL = {response.url}")
-            continue
-        if response.status_code != 200:
-            print(f"Error fetching CVEs: {response.text}.\n Status code:", response.status_code)
-            if response.status_code ==503: ## server error 503 then call the API again
-                print("Calling API again.........")
-                time.sleep(3)
-                continue
+        if delta > 120:
+            # If the date range is more than 120 days, split it into chunks
+            date_chunks = split_date_range(mod_start_date, mod_end_date)
+            print(f"Date range exceeds 120 days ({delta} days). Splitting into {len(date_chunks)} chunks.")
+            
+            for i, (chunk_start, chunk_end) in enumerate(date_chunks):
+                print(f"Processing chunk {i+1}/{len(date_chunks)}: {chunk_start.strftime('%Y-%m-%d')} to {chunk_end.strftime('%Y-%m-%d')}")
+                success = fetch_chunk_data(chunk_start, chunk_end, resp_handler)
+                if not success:
+                    return False
+        else:
+            # If the date range is 120 days or less, fetch directly
+            success = fetch_chunk_data(mod_start_date, mod_end_date, resp_handler)
+            if not success:
+                return False
+    else:
+        # If no date range is provided, fetch the default data
+        success = fetch_chunk_data(None, None, resp_handler)
+        if not success:
             return False
-        print("-------done calling API--------")
-        cve_data = response.json()
-        if total_result <0:
-            total_result = int(cve_data["totalResults"])
-        resp_handler.parse_response(cve_data)
-        print("done parse_response")
-        start_index +=2000
-        if start_index >total_result: #no more page to read
-            break
+    
     resp_handler.output(mod_start_date)
     return True
+
 def save_cve_data(data, mode='w'):
     """
     Save or append CVE data to a JSON file.
@@ -207,28 +218,41 @@ def main(): #main function
     current_time = datetime.now()
     current_time = current_time - timedelta(days=2)
     current_date = current_time.strftime('%d_%m_%Y')
-    current_date = "09_01_2025" # uncomment this if want to manually set current_date for file naming
+    current_date = "010125_311225" # uncomment this if want to manually set current_date for file naming
     save_dir = f"{config.BASE_METADATA_DIR}/{current_date}"
     function_save_dir = f"{config.BASE_FUNCTION_DIR}/{current_date}"
     os.makedirs(save_dir, exist_ok=True)
     os.makedirs(function_save_dir, exist_ok=True)
     last_update_date = current_time
-    #normal monitoring
     if last_update_date:
         mod_start_date=last_update_date - timedelta(days=1)
         mod_end_date = mod_start_date + timedelta(days=1)
         # uncomment this if want to monitoring specific long time duration
-        # mod_start_date = datetime.strptime("20-03-2024", "%d-%m-%Y")
-        # mod_end_date = datetime.strptime("18-11-2024", "%d-%m-%Y")  
+        mod_start_date = datetime.strptime("01-01-2025", "%d-%m-%Y")
+        mod_end_date = datetime.strptime("31-12-2025", "%d-%m-%Y")  
         
         check = fetch_cve_data(mod_start_date=mod_start_date, mod_end_date = mod_end_date)
     else:
         check = fetch_cve_data()
 
-    #monitoring specific long time duration
-    # check=split_ranges_for_api("28-02-2024", "09-01-2025")    
-    # check=True
-    
+    if check:
+        # parse_response(current_time,new_data)
+        update_patch_json()
+        count =0
+        count_func=0
+        for platform in ["github", "gitlab", "bitbucket"]:
+            os.makedirs(f"{save_dir}/{platform}", exist_ok=True)
+            # get_functions( f"{save_dir}/{platform}",platform)
+            commit_save_dir = f"{save_dir}/{platform}"
+            print(f"Start process_function\nData will be saved at {function_save_dir}")
+            
+            for filename in os.listdir(commit_save_dir):
+                count+=1
+                # print(count)
+                file_path = os.path.join(commit_save_dir, filename)
+                if not os.path.isfile(file_path):
+                    continue
+                count_func += process_function(file_path,platform,function_save_dir)
         
 
 if __name__ == "__main__":

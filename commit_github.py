@@ -4,7 +4,7 @@ from os import execlp, removedirs
 import signal
 import sys
 import urllib.request
-from lib import DatabaseConnection, calculate_2month_period, check_if_commit_exist, check_if_keyword_exist_in_file, exit_search_git_repo, get_cwe_by_cve_json, get_keyword_by_cwe, get_repo_by_cpe_product_name, load_jsonl, make_exit_handler, output_json
+from lib import DatabaseConnection, calculate_2month_period, check_if_commit_exist, check_if_keyword_exist_in_file, exit_search_git_repo, get_cwe_by_cve_json, get_keyword_by_cwe, get_repo_by_cpe_product_name, make_exit_handler, output_json
 
 import re
 import time
@@ -15,18 +15,17 @@ from requests_oauth2 import OAuth2BearerToken
 from platform_api_caller import GitHub_API_Caller
 
 from lib import create_file_if_not_exists, find_files_keyword_in_dir
-from config import NVD_API_DATA_PATH, GITHUB_VFC_DIR
+from config import NVD_API_DATA_PATH, GITHUB_VFC_DIR, GITHUB_API_KEYS
 
 GLOBAL_REQUEST_COUNT = 0
 GLOBAL_DOWNLOAD_COUNT = 0
 
 OUTPUT_LOG_DIR = "update/"
-output_dir = "crawled_patch/v-szz/vic/"
+output_dir = "crawled_patch/github_nopatch/"
 output_commit_dir = None
 
 MAX_TRY_TIME = 6
-GH_TOKEN = []  # NOTE put your own github token here
-
+GH_TOKEN = GITHUB_API_KEYS
 # repo platform registry
 repo_platform = "github"
 GH_REST_URL = 'https://api.github.com/repos'
@@ -136,10 +135,7 @@ def crawl_diff(filepath, passed_output_dir):
     # 爬取所有在CVE reference中的diff
     global output_dir
     output_dir = passed_output_dir+"/github/"
-    if filepath.endswith(".json"):
-        nvd_gh_patch = json.load(open(filepath, 'r'))
-    elif filepath.endswith(".jsonl"):
-        nvd_gh_patch = load_jsonl(filepath)
+    nvd_gh_patch = json.load(open(filepath, 'r'))
     missing_list = []
     with open("missing_cve.txt", "r") as f:
         lines = f.readlines()
@@ -156,8 +152,8 @@ def crawl_diff(filepath, passed_output_dir):
             sleep_count += 1
         
         cve_id = sample["cve_id"]
-        if cve_id != "CVE-2018-11758":
-            continue
+        # if cve_id != "CVE-2021-41959":
+        #     continue
         # if cve_id not in missing_list:
         #     continue
         
@@ -171,7 +167,7 @@ def crawl_diff(filepath, passed_output_dir):
                 processed_url_file.write(f"{cve_id}\n")
                 continue
             processed_url.append(url)
-
+        
             gh_commit = GH_COMMIT.match(url)
             gh_issue_pull = GH_ISSUE_PULL.match(url)
             # gh_blob = GH_BLOB.match(url)
@@ -364,5 +360,6 @@ def crawl_diff(filepath, passed_output_dir):
     
 if __name__ == "__main__":
     collect_nvd_github_patch()
+    # crawl_diff("nvd_cve_nopatch_github.json")
     # search_keyword_in_repo()
     
