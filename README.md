@@ -1,6 +1,6 @@
-# Mapping NVD Records to Their VFCs: How Hard is it?
+# Mapping NVD Records to Their VFCs: How Hard is it? [![arXiv](https://img.shields.io/badge/arXiv-<2506.09702>-<COLOR>.svg)](https://arxiv.org/abs/2506.09702)
 
-Replication package of the paper "Mapping NVD Records to Their VFCs: How Hard is it?"
+Replication package of the paper "Mapping NVD Records to Their VFCs: How Hard is it?" 
 
 ## Dataset
 - Automatically collected VFCs can be found at ```dataset/auto```
